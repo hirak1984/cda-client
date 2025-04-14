@@ -19,7 +19,6 @@ object CloudDataAccessClient {
     // Log the name of the config file, so if there is a problem processing it, you will know the name of the file
     log.info(s"Loading config file '$configFilePath'")
     val clientConfig: ClientConfig = ClientConfigReader.processConfigFile(configFilePath)
-    log.info(s"The config file has been loaded - $clientConfig")
 
     // Moved processConfig() outside of TableReader, parsing it is an unnecessary responsibility of the TableReader
     val tableReader = new TableReader(clientConfig)
