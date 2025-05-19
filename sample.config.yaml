@@ -1,6 +1,6 @@
 sourceLocation:
   bucketName: <bucket name>
-  manifestKey: manifest.json
+  manifestKey: 1manifest.json
 outputLocation:
   path: <folder name>
 savepointsLocation:

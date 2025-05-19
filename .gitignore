@@ -89,3 +89,7 @@ __pycache__/
 
 # Exclude Gradle wrapper
 !/gradle/wrapper/gradle-wrapper.jar
+
+bin
+.vscode
+config
