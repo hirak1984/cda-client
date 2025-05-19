@@ -37,6 +37,7 @@ trait OutputWriter {
    */
   def schemasAreConsistent(dataframe: DataFrame, tableName: String,
                            schemaFingerprint: String, sparkSession: SparkSession): Boolean = true
+
 }
 
 object OutputWriter {

@@ -13,8 +13,12 @@ object CloudDataAccessClient {
   def main(args: Array[String]): Unit = {
     // Get the command line args
     val cliArgumentsProcessor = new CLIArgumentsProcessor(args)
+
     val configFilePath = cliArgumentsProcessor.configFilePath
     val singleTableValue = cliArgumentsProcessor.singleTableValue
+
+   // val configFilePath = "/Users/hrk/codes/java_utilities/cda-client/config/config.yaml"
+   // val singleTableValue = "cc_claim"
 
     // Log the name of the config file, so if there is a problem processing it, you will know the name of the file
     log.info(s"Loading config file '$configFilePath'")

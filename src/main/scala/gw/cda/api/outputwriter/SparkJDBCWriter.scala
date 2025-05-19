@@ -86,6 +86,7 @@ private[outputwriter] class SparkJDBCWriter(override val clientConfig: ClientCon
                              batchSize: Long,
                              jdbcWriteType: JdbcWriteType.Value): Unit = {
     try {
+      log.debug(s"to avoid gradle error : ${tableName} ")
       tableDataframe.write
         .format("jdbc")
         .mode(saveMode)
