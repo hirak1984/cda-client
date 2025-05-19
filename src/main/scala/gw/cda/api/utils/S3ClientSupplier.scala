@@ -2,7 +2,6 @@ package gw.cda.api.utils
 
 import com.amazonaws.services.s3.AmazonS3
 import com.amazonaws.services.s3.AmazonS3ClientBuilder
-import org.apache.hadoop.fs.s3a.BasicAWSCredentialsProvider
 
 /** Supplier object for AmazonS3 client object.
  * Initializes it here so that that only one instance is needed throughout

@@ -63,9 +63,8 @@ object ManifestReader {
    * @return Manifest contents as string
    */
   private[cda] def getManifestJson(bucketName: String, manifestKey: String): String = {
-    ManifestReader.log.info(s"Read manifest file from bucket: $bucketName with key: $manifestKey")
     val manifestJson = S3ClientSupplier.s3Client.getObjectAsString(bucketName, manifestKey)
-
+    ManifestReader.log.info(s"Read manifest file from bucket: $bucketName with key: $manifestKey")
     manifestJson
   }
 

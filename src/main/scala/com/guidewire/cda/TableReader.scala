@@ -363,7 +363,6 @@ class TableReader(clientConfig: ClientConfig) {
     } else {
       manifestEntry.dataFilesPath + "/"
     }
-    log.debug(s"Printing to avoid compile error ${tableName} ")
     new AmazonS3URI(uriString)
   }
 
